@@ -1,8 +1,6 @@
-(function () {
+define(function (require, exports, module) {
     "use strict";
 
-    $(function () {
-        window.alert("hello");
-    });
-
-}());
+    var main = require("./main");
+    main.fn();
+});
