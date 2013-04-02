@@ -1,0 +1,22 @@
+{
+  "author": "Ohad Kravchick <myok12@yahoo.com>",
+  "name": "fluent2013-api",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/myok12/fluent2013-webapp.git"
+  },
+  "dependencies": {
+      "coffee-script": "~1.4.0",
+      "express": "3.0.0",
+      "async": "~0.2.5",
+      "optimist": "~0.3.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+      "start": "./node_modules/coffee-script/bin/coffee app.coffee"
+  },
+  "engines": {
+    "node": "*"
+  }
+}
