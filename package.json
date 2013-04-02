@@ -1,0 +1,8 @@
+{
+    "name": "fluent2013-webapp",
+    "version": "0.0.1",
+    "scripts": {
+        "start-frontend": "cd frontend && python -m SimpleHTTPServer",
+        "test-frontend": "./node_modules/mocha/bin/mocha --reporter list --recursive tests/*"
+    }
+}

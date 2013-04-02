@@ -1,12 +1,13 @@
 (function () {
     "use strict";
 
-    var assert = require("assert");
-    var main = require("../frontend/js/main");
+    var expect = require("chai").expect;
+    var requirejs = require("requirejs");
+    var main = requirejs("../../../frontend/js/main");
 
     describe("main", function () {
-        it("exports fn", function () {
-            console.log(main);
+        it("exports fn correctly", function () {
+            expect(main.fn).to.be.a("function");
         });
     });
 }());
