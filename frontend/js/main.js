@@ -20,8 +20,9 @@ define(function (require, exports, module) {
     };
 
     var $backContainer = $.find(".left-buttons");
-    var backView = new BackView({el: $backContainer[0]});
+    var backView = new BackView();
     backView.render();
+    backView.$el.appendTo($backContainer[0]);
     backView.hide();
 
     var backToStart = function () {
@@ -44,9 +45,9 @@ define(function (require, exports, module) {
                 // grabbed the section, can render the views
 
                 var sectionView = new SectionView({
-                    collection: articlePreviews,
-                    el: $("<div></div>").appendTo($output)
+                    collection: articlePreviews
                 }).render();
+                sectionView.$el.appendTo($output);
                 addView(sectionView);
             },
             error: function () {

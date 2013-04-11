@@ -10,17 +10,11 @@ define(function (require, exports, module) {
             //fires a global event for back button
             Backbone.Events.trigger("backClicked");
         },
-        getImg: function () {
-            if (!this.img) {
-                this.img = this.$el.find('img');
-            }
-            return this.img;
-        },
         hide: function () {
-            this.getImg().hide();
+            this.$el.hide();
         },
         show: function () {
-            this.getImg().show();
+            this.$el.show();
         },
         render: function () {
             this.$el.html(this.template({}));

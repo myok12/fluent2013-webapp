@@ -18,11 +18,10 @@ define(function (require, exports, module) {
 
             var i;
             for (i = 0; i < this.collection.length; i += 1) {
-                var $article = $('<div class="article-preview"></div>').appendTo($articles);
                 var articlePreviewView = new ArticlePreviewView({
                     model: this.collection.at(i),
-                    el: $article
                 }).render();
+                $articles.append(articlePreviewView.el);
 
             }
             return this;

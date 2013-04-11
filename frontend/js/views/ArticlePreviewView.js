@@ -5,6 +5,7 @@ define(function (require, exports, module) {
         initialize: function () {
             this.listenTo(this.model, "change", this.render);
         },
+        className: "article-preview",
         events: {
             "click .headline": "articleClicked"
         },
