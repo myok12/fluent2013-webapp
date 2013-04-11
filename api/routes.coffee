@@ -24,11 +24,18 @@ module.exports = (app) ->
                 loads.push (callback) =>
                     loadArticle articleId, callback
 
+        selectThumb = (article) ->
+            if ! article?.relatedAssets? then return null
+            for asset in article.relatedAssets
+                if asset.crops.articleInline then return asset.crops.articleInline
+            return null
+
         # scales down from a full article to a smaller preview
         fromFullArticleToArticlePreviewMapper = (article) ->
             articlePreview = {}
             articlePreview.id = article.id or throw new Error "id missing in article"
             articlePreview.title = article.title or throw new Error "title missing in article"
+            articlePreview.thumb = selectThumb(article) or ""
 
             return articlePreview
 
