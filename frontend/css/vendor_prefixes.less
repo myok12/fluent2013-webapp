@@ -1,0 +1,188 @@
+// taken from: https://raw.github.com/derekallard/LESSCSS-Vendor-Prefixes/master/vendor_prefixes.less
+
+
+// Vendor prefix mixin for LESS CSS
+//
+// Derek Allard
+// http://derekallard.com
+//
+// Note that only Safari, Chrome, Firefox are covered despite
+// the fact that there are at least 15 vendors using prefixes
+// today "in the wild"
+
+.border-radius( @radius: 3px ) {
+	-webkit-border-radius: @radius;
+	   -moz-border-radius: @radius;
+	        border-radius: @radius;		
+}
+
+.outline-radius( @radius: 3px ) {
+	-webkit-outline-radius: @radius;
+	   -moz-outline-radius: @radius;
+	        outline-radius: @radius;		
+}
+
+.box-shadow( 
+	@x : 2px, 
+	@y : 2px, 
+	@blur : 5px, 
+	@spread : 0, 
+	@color : rgba(0,0,0,.6) 
+) {
+	-webkit-box-shadow: @x @y @blur @spread @color;
+	   -moz-box-shadow: @x @y @blur @spread @color;	
+			box-shadow: @x @y @blur @spread @color;	
+}
+
+.transition(
+	@what : all,
+	@length : 1s,
+	@easing : ease-in-out
+) {
+	-webkit-transition: @what @length @easing;
+	   -moz-transition: @what @length @easing;
+	     -o-transition: @what @length @easing;
+		  	transition: @what @length @easing;			
+}
+
+.transform(
+	@params 
+) {
+	-webkit-transform: @params;
+  	   -moz-transform: @params;
+             -o-transform: @params;
+  	        transform: @params;
+}
+
+//@pack : center,
+//@align : center
+.box(
+	@orient : horizontal,
+	@pack : start,
+	@align : stretch
+) {
+	display: -webkit-box;
+	   display: -moz-box;	
+	        display: box;
+
+	-webkit-box-orient: @orient;
+	   -moz-box-orient: @orient;
+	   		box-orient: @orient;
+	   		
+	-webkit-box-pack: @pack;
+	   -moz-box-pack: @pack;
+	        box-pack: @pack;		
+	        
+	-webkit-box-align: @align;
+	   -moz-box-align: @align;
+			box-align: @align;		
+}
+
+.flex( @val : 1 ) {
+	-webkit-box-flex: @val;
+	   -moz-box-flex: @val;
+	        box-flex: @val;
+}
+
+.resize( @direction ) {
+	-webkit-resize: @direction;
+	   -moz-resize: @direction;
+	        resize: @direction;
+}
+
+.linear-gradient( 
+	@begin: black, 
+	@end: white,
+	@switch : 100%
+) {
+	background:  @begin;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(@begin), color-stop(@switch, @end));
+	background: -moz-linear-gradient(top, @begin, @end @switch);
+	background: -o-linear-gradient(top, @begin, @end @switch);
+	background: linear-gradient(top, @begin, @end @switch);
+}
+
+.radial-gradient( 
+	@begin: black, 
+	@end: white,
+	@switch : 100%
+) {
+	background:  @begin;
+
+	background: -moz-radial-gradient(center, ellipse cover, @begin 0%, @end @switch);
+	background: -webkit-gradient(radial, center center, 0, center center, 100%, color-stop(0%, @begin), color-stop(@switch, @end));
+	background: -webkit-radial-gradient(center, circle cover, @begin 0%, @end @switch);
+	background: -o-radial-gradient(center, ellipse cover, @begin 0%, @end @switch);
+	background: radial-gradient(ellipse at center, @begin 0%, @end @switch);
+
+	/* ie support */
+	background: -ms-radial-gradient(center, ellipse cover, @begin 0%, @end @switch);
+	filter: ~"progid:DXImageTransform.Microsoft.gradient(startColorstr='@{begin}', endColorstr='@{end}', GradientType=1)";
+}
+    
+.double-borders( 
+	@colorOne : green,
+	@colorTwo : red,
+	@radius : 0
+) {
+	border: 1px solid @colorOne;
+		
+	-webkit-box-shadow: 0 0 0 1px @colorTwo;	
+	   -moz-box-shadow: 0 0 0 1px @colorTwo;
+	   		box-shadow: 0 0 0 1px @colorTwo;
+	   		
+	.border-radius( @radius );
+}
+
+.triple-borders( 
+	@colorOne : green,
+	@colorTwo : red,
+	@colorThree : blue,
+	@radius : 0
+) {
+	border: 1px solid @colorOne;
+	
+	.border-radius( @radius );
+
+	-webkit-box-shadow: 0 0 0 1px @colorTwo, 0 0 0 2px @colorThree;	
+	   -moz-box-shadow: 0 0 0 1px @colorTwo, 0 0 0 2px @colorThree;
+	   		box-shadow: 0 0 0 1px @colorTwo, 0 0 0 2px @colorThree;
+}
+
+.columns(
+	@count : 3,
+	@gap : 10
+) {
+	-webkit-column-count: @count;
+	   -moz-column-count: @count;
+	        column-count: @count;
+
+	-webkit-column-gap: @gap;
+	   -moz-column-gap: @gap;
+	        column-gap: @gap;
+}
+
+.column-span-all () {
+	-webkit-column-span: all;
+	   -moz-column-span: all;
+	        column-span: all;
+}
+
+.box-sizing( @type : border-box ) {
+	-webkit-box-sizing: @type;
+	   -moz-box-sizing: @type;
+	        box-sizing: @type;		
+}
+
+.text-shadow(
+	@color : #000,
+	@xPos : 0px,
+	@yPos : 0px,
+	@blur : 0px
+) {
+-webkit-text-shadow: @xPos @yPos @blur @color;
+   -moz-text-shadow: @xPos @yPos @blur @color;
+    -ms-text-shadow: @xPos @yPos @blur @color;
+     -o-text-shadow: @xPos @yPos @blur @color;
+        text-shadow: @xPos @yPos @blur @color;
+}
