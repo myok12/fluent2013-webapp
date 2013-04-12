@@ -1,42 +1,94 @@
 [
   {
-    "id": 1726753,
-    "title": "Dementia Cost, Already High, Is Projected to Double by 2040"
+    "id": 100000002166444,
+    "title": "Senators’ Vote Clears the Way for Debate on New Gun Laws",
+    "summary": "The threat of a filibuster fell to a 68-31 vote. The Senate next week will consider its first major gun-control legislation in two decades, which would expand background checks and add penalties for criminal sales.",
+    "thumb": {
+      "height": 127,
+      "url": "http://graphics8.nytimes.com/images/2013/04/12/us/politics/12guns/12guns-articleInline.jpg",
+      "width": 190
+    }
   },
   {
-    "id": 1851294,
-    "title": "Argentine Flooding Claims Dozens of Lives"
+    "id": 100000002165807,
+    "title": "For Swing-State Democrats, Perils on Gun Control",
+    "summary": "For years, guns have been an issue for swing-state Democrats to avoid. But many Democrats say recent shootings have changed the politics of guns.",
+    "thumb": {
+      "height": 127,
+      "url": "http://graphics8.nytimes.com/images/2013/04/12/us/politics/12dems/12dems-articleInline.jpg",
+      "width": 190
+    }
   },
   {
-    "id": 2765361,
-    "title": "Councilman’s Boast Revives Question of Quinn’s Oversight"
+    "id": 100000002167048,
+    "title": "Online Currency Draws Big Investors",
+    "summary": "The Winklevoss twins, known as nemeses of Mark Zuckerberg, have what seems to be one of the largest portfolios of the bitcoin.",
+    "thumb": {
+      "height": 127,
+      "url": "http://graphics8.nytimes.com/images/2013/04/12/business/dbpix-bitcoin4/dbpix-bitcoin4-articleInline.jpg",
+      "width": 190
+    }
   },
   {
-    "id": 6235841,
-    "title": "U.S. to Add Pacific Defense as North Korea Bars Workers"
+    "id": 100000002166084,
+    "title": "South Korea Eases Tone on Bellicose Neighbor",
+    "summary": "South Korea softened its tone on Thursday amid concerns that North Korean missile tests are imminent, and its president moved to calm foreign investors.",
+    "thumb": {
+      "height": 127,
+      "url": "http://graphics8.nytimes.com/images/2013/04/12/world/asia/12korea2/12korea2-articleInline-v2.jpg",
+      "width": 190
+    }
   },
   {
-    "id": 7248615,
-    "title": "In a Budget Gesture, Obama Will Return 5% of His Salary"
+    "id": 100000002166185,
+    "title": "Automakers Recall 3.3 Million Vehicles Over Air Bags",
+    "summary": "Honda, Toyota, Nissan and Mazda are recalling about 3.3 million vehicles worldwide because the passenger-side air bag could deploy with too much force.",
+    "thumb": {
+      "height": 91,
+      "url": "http://graphics8.nytimes.com/images/2013/04/11/automobiles/11civic/11civic-articleInline.jpg",
+      "width": 190
+    }
   },
   {
-    "id": 7526352,
-    "title": "Rutgers Leaders Draw Scrutiny on Fired Coach"
+    "id": 100000002166462,
+    "title": "N.H.L. Announces Initiative to Support Gay Athletes",
+    "summary": "The N.H.L. has formed a partnership with an advocacy group pledged to fight homophobia in sports, and plans training and counseling on gay issues for its teams and players.",
+    "thumb": ""
   },
   {
-    "id": 8378461,
-    "title": "Alabama Legislature Passes Abortion Clinic Limits"
+    "id": 100000002166358,
+    "title": "Fleet Week Is Threatened by Federal Budget Cuts",
+    "summary": "New York City officials and military representatives are preparing for a Fleet Week that will be significantly reduced if it occurs at all.",
+    "thumb": {
+      "height": 127,
+      "url": "http://graphics8.nytimes.com/images/2013/04/12/nyregion/12fleet-web1/12fleet-web1-articleInline.jpg",
+      "width": 190
+    }
   },
   {
-    "id": 8961732,
-    "title": "Multiplying the Old Divisions of Class in Britain"
+    "id": 100000002165682,
+    "title": "Sometimes, Riders Find a Cabby Worth Praising",
+    "summary": "About twice a day, taxi passengers in New York have something nice to say about their cabbies — taking the unusual step of filing a compliment with the city.",
+    "thumb": {
+      "height": 127,
+      "url": "http://graphics8.nytimes.com/images/2013/04/11/nyregion/y-compliment/y-compliment-articleInline.jpg",
+      "width": 190
+    }
   },
   {
-    "id": 9182561,
-    "title": "T-Mobile Breaks Free of the Cellphone Conspiracy"
+    "id": 100000002166232,
+    "title": "Live Updates on the Masters",
+    "summary": "Live blogging of the first round of the 77th Masters on Thursday, with eyes on Tiger Woods and Rory McIlroy.",
+    "thumb": {
+      "height": 133,
+      "url": "http://graphics8.nytimes.com/images/2013/04/12/sports/11onpar4/11onpar4-articleInline.jpg",
+      "width": 190
+    }
   },
   {
-    "id": 9812864,
-    "title": "Connecticut Senate Passes Gun Curbs"
+    "id": 100000002166524,
+    "title": "Turkish Police Say U.S. Embassy Was Target of Bomb Plot",
+    "summary": "Twelve are arrested in an alleged Al-Qaeda-linked plot to attack the embassy in Ankara, a synagogue in Istanbul and other targets.",
+    "thumb": ""
   }
 ]
