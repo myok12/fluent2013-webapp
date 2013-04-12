@@ -9,7 +9,7 @@ define(function (require, exports, module) {
         events: {
             "click .headline": "articleClicked"
         },
-        template: _.template('<div class="headline"><%= title%></div>'),
+        template: _.template('<div class="thumb <%if (!thumb) { %>hidden<% } %>"><%if (thumb) { %><img src="<%= thumb.url%>" height="<%= thumb.height%>" width="<%= thumb.width%>"><% } %></div><div class="headline"><%= title%></div><div class="summary"><%= summary%>'),
         render: function () {
             this.$el.html(this.template(this.model.attributes));
             return this;

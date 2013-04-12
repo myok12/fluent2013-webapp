@@ -35,6 +35,7 @@ module.exports = (app) ->
             articlePreview = {}
             articlePreview.id = article.id or throw new Error "id missing in article"
             articlePreview.title = article.title or throw new Error "title missing in article"
+            articlePreview.summary = article.summary or throw new Error "summary missing in article"
             articlePreview.thumb = selectThumb(article) or ""
 
             return articlePreview

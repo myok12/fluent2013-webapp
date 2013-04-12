@@ -67,9 +67,9 @@ define(function (require, exports, module) {
                 backFn = backToStart;
                 // grabbed the section, can render the views
                 var articleView = new ArticleView({
-                    model: article,
-                    el: $("<div></div>").appendTo($output)
+                    model: article
                 }).render();
+                articleView.$el.appendTo($output);
                 addView(articleView);
             },
             error: function () {

@@ -10,7 +10,7 @@ define(function (require, exports, module) {
         events: {
             "click .icon": "open"
         },
-        template: _.template('<div>Section</div><div class="article-previews"></div>'),
+        template: _.template('<div class="section-title"></div><div class="article-previews"></div>'),
         render: function () {
             this.$el.html(this.template({}));
 
