@@ -5,7 +5,7 @@ define(function (require, exports, module) {
 
     var ArticlePreviews = Backbone.Collection.extend({
         model: ArticlePreview,
-        url: 'http://localhost:8080/api/section'
+        url: 'http://localhost:8000/api/section'
     }, {
         grabFromServer: function (options) {
             options = options || {};
