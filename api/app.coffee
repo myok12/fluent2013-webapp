@@ -10,7 +10,7 @@ app = express()
 argv = optimist
     .alias( "h", "help" )
     .default
-        port: 8080
+        port: 8000
     .argv
 
 if argv.help or argv.h
