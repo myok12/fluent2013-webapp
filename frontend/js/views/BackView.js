@@ -2,7 +2,7 @@ define(function (require, exports, module) {
     "use strict";
 
     var BackView = Backbone.View.extend({
-        template: _.template('<img class="button-back">'),
+        template: _.template('<img class="button-back" src="images/back.png">'),
         events: {
             "click img": "backClicked"
         },
