@@ -16,6 +16,7 @@ define(function (require, exports, module) {
 
             var $articles = this.$el.find('.article-previews');
 
+            // renders all existing article previews in place
             var i;
             for (i = 0; i < this.collection.length; i += 1) {
                 var articlePreviewView = new ArticlePreviewView({

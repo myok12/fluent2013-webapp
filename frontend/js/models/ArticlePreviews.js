@@ -3,10 +3,14 @@ define(function (require, exports, module) {
 
     var ArticlePreview = require("./ArticlePreview");
 
+    // a collection of ArticlePreview objects
+    // contains all elements for generating a section page
     var ArticlePreviews = Backbone.Collection.extend({
         model: ArticlePreview,
+        // will grab the collection from the api server
         url: 'http://localhost:8000/api/section'
     }, {
+        // a "static" method to construct the object, by fetching it from the api
         grabFromServer: function (options) {
             options = options || {};
             var articlePreviews = new ArticlePreviews();

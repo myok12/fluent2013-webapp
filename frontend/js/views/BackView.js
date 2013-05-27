@@ -1,6 +1,7 @@
 define(function (require, exports, module) {
     "use strict";
 
+    // a simple view for the back button. allowing to hide and show it.
     var BackView = Backbone.View.extend({
         template: _.template('<img class="button-back" src="images/back.png">'),
         events: {

@@ -1,9 +1,12 @@
 define(function (require, exports, module) {
     "use strict";
 
+    // A model that wraps an article
     var Article = Backbone.Model.extend({
-        urlRoot: 'http://localhost:8000/api/article'
+        // defines how to grab an article from the server
+        urlRoot: 'http://localhost:8000/api/article' // + '/<articleId>'
     }, {
+        // a "static" method to construct, an article for a given article id, by fetching it
         grabById: function (articleId, options) {
             if (!articleId) { throw new Error("articleId not provided"); }
             options = options || {};

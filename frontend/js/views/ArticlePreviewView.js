@@ -1,6 +1,8 @@
 define(function (require, exports, module) {
     "use strict";
 
+    // renders an article preview on the section page.
+    // registers for clicks
     var ArticlePreviewView = Backbone.View.extend({
         initialize: function () {
             this.listenTo(this.model, "change", this.render);
